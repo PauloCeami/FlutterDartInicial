@@ -5,7 +5,6 @@ abstract class Animal {
   String raca;
   int idade;
 
-
   Animal(this.nome, this.peso, this.cor, this.raca, this.idade);
 
   void andar() {
@@ -17,10 +16,6 @@ abstract class Animal {
     print("o animal esta comendo");
   }
 
-  void dormir(){
-    print("O $nome está dormindo agora...");
-  }
-
-
-
+  // este metodo será obrigatorio ser implementado na classe que herdar de animal
+  void dormir();
 }

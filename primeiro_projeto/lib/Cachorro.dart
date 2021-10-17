@@ -18,12 +18,12 @@ class Cachorro extends Animal {
   }
 
   @override
-  void dormir() {
-    print("O $nome não está dormindo agora...");
+  String toString() {
+    return " Dados do Cachorro  | Nome: $nome , Peso: $peso, Cor: $cor, Raca: $raca, Idade: $idade";
   }
 
   @override
-  String toString() {
-    return " Dados do Cachorro  | Nome: $nome , Peso: $peso, Cor: $cor, Raca: $raca, Idade: $idade";
+  void dormir() {
+    print("O $nome não está dormindo agora...");
   }
 }

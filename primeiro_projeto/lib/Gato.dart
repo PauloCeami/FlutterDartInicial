@@ -14,4 +14,9 @@ class Gato extends Animal {
   String toString() {
     return " Dados do Gato  | Nome: $nome , Peso: $peso, Cor: $cor, Raca: $raca, Idade: $idade";
   }
+
+  @override
+  void dormir() {
+   print("O gato está dormindo agora...");
+  }
 }

@@ -34,5 +34,5 @@ void main() {
   /*
   Abstract classes can't be instantiated. (Documentation)  Try creating an instance of a concrete subtype.
    */
-  Animal anim = new Animal();
+  //Animal anim = Animal();
 }
