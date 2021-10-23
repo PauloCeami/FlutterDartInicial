@@ -25,6 +25,10 @@ class _HomeState extends State<Home> {
       mPeso.text = "";
       mAltura.text = "";
       mInfoText = "informe os seus dados";
+
+      // reset as mensagens do form
+      // faz as mensagens de erro de validaçõe sumirem tbm
+      mFormGk_imc = GlobalKey<FormState>();
     });
   }
 
