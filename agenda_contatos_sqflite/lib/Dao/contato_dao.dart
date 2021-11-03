@@ -80,7 +80,7 @@ class ContatoDao {
     }
   }
 
-  Future<int> deleteContact(int id) async {
+  Future<int> deleteContact(int? id) async {
     Database? dbContato = await db;
     return await dbContato!
         .delete(tableContato, where: "$idColumn = ?", whereArgs: [id]);

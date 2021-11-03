@@ -4,6 +4,11 @@ final String emailColumn = "email";
 final String telefoneColumn = "telefone";
 final String imgColumn = "img";
 
+/*
+String myVar = ' '; <- atribui um valor desde o início, o null-safety nunca vai reclamar dessa variável pq ela nunca poderá ser nula.
+late String myVar; <- para o null-safety, é o mesmo caso do acima, pois quando a variável é late vc está garantindo ao Flutter que irá preencher algum valor na variável antes de usar ela.
+String? myVar; <- nessa caso você está dizendo ao Flutter que pretende salvar null na variável em algum momento, e por isso o null-safety vai exigir que vc faça as validações com o ! ou ? toda hora.
+ */
 class Contato {
   int? id;
   String? nome;

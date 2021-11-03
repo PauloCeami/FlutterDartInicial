@@ -46,10 +46,40 @@ agenda de contatos e persistencia de dados
 **Aula 105**
 
 **Aula 106**
+- showModalBottomSheet  escolhendo entre opções 
+em uma janela modal no bottom
 
 **Aula 107**
+ImagePicker agora suporta Galeria!
+No próximo vídeo, eu disse que o ImagePicker ainda não suportava a Galeria, mas isso não é mais verdade! 
+Agora o plugin suporta perfeitamente e eu mostrarei como criar uma janela pra escolher entre um ou outro lá no App #12!
 
 **Aula 108**
+- https://johannesmilke.teachable.com/p/intellij-super-efficient-with-flutter
+- https://github.com/JohannesMilke/image_picker_example
+- usando image picker 9 de ago. de 2021
+- https://www.youtube.com/watch?v=MSv38jO4EJk&ab_channel=JohannesMilke
+
+for ios
+<project root>/ios/Runner/Info.plist
+
+<key>NSCameraUsageDescription</key>
+<string>describe why your app needs access to the camera. This is called Privacy - Camera Usage Description in the visual editor.</string>
+<key>NSPhotoLibraryUsageDescription</key>
+<string>describe why your app needs permission for the photo library. This is called Privacy - Photo Library Usage Description in the visual editor.</string>
+<key>NSMicrophoneUsageDescription</key>
+<string>describe why your app needs access to the microphone, if you intend to record videos. This is called Privacy - Microphone Usage Description in the visual editor.</string>
+
+decoration: BoxDecoration(
+shape: BoxShape.circle,
+image: DecorationImage(
+image: mContatoEditing!.img != null
+? FileImage(File(mContatoEditing!.img.toString()))
+: AssetImage("images/person.png") as ImageProvider,
+fit: BoxFit.cover,
+),
+)
+
 
 **Aula 109**
 
